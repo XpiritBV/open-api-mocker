@@ -158,6 +158,14 @@ Will produce the following response:
 
 Besides generating fake data, you can also specify with the `prefer` header that you would like the mock API to respond in unpredictable ways. You can send different status code or add latency to the response by adding the `statusCode` and/or `latency` parameters inside the `prefer` header. Using the `statusCodeRate` and `latencyRate` parameters you can specify when to add these behaviours. Use a value between 0 and 100 (%) to add less or more randomness.
 
+An example:
+
+```http
+GET http://localhost:5001/v1/pets/1
+Prefer: statusCode=500, statusCodeRate=50
+Prefer: latency=500, latencyRate=50
+```
+
 ## Advanced usage
 
 See the [advanced usage docs](docs/README.md) to extend or build your own app upon OpenAPI Mocker.

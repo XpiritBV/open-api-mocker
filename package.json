@@ -34,7 +34,8 @@
     "mocha": "^9.1.2",
     "mock-require": "^3.0.3",
     "nyc": "^15.1.0",
-    "sinon": "^11.1.2"
+    "sinon": "^11.1.2",
+    "swagger-ui-express": "^4.3.0"
   },
   "dependencies": {
     "ajv": "^6.12.6",
@@ -52,6 +53,7 @@
     "micro-memoize": "^4.0.9",
     "parse-prefer-header": "^1.0.0",
     "superstruct": "^0.6.2",
+    "yamljs": "^0.3.0",
     "yargs": "^16.2.0"
   },
   "directories": {
